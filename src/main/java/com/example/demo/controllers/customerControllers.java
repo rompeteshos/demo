@@ -1,7 +1,7 @@
 package com.example.demo.controllers;
 
 import com.example.demo.entities.Customer;
-import com.example.demo.services.ICostumerService;
+import com.example.demo.services.ICustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,7 +11,7 @@ import java.util.List;
 public class customerControllers {
 
     @Autowired
-    private ICostumerService service;
+    private ICustomerService service;
 
     @GetMapping("/api/customers")
     public List<Customer> getAll() {
